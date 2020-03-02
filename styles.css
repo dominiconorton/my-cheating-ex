@@ -1,0 +1,26 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #eceeef;
+    border-radius: .3rem;
+}
+
+.page-footer {
+	background-color: #eceeef;
+}
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.row {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+#resultsContainer{
+  width: mw-100;
+  height: 500px;
+  overflow: auto;
+}
+
