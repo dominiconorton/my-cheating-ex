@@ -23,11 +23,11 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/index">Reports</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="/report">Reports </a>
                   </li>
-          <li class="nav-item active">
-          <a class="nav-link" href="/report">Report my ex <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+          <a class="nav-link" href="/reportmyex">Report my ex</a>
         </li>
               <li class="nav-item">
           <a class="nav-link" href="/faq">FAQ</a>
@@ -35,49 +35,121 @@
             <li class="nav-item">
           <a class="nav-link" href="/disclaimer">Disclaimer</a>
         </li>
-        </li>
         <li class="nav-item">
-        <a class="nav-link" href="/contact">Contact</a>
-        </li>
+          <a class="nav-link" href="/contact">Contact</a>
+          </li>
           </ul>
             <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign out</button>
         </div>-->
       </nav>
-
-    <div class="typeform-widget" data-url="https://dnorton.typeform.com/to/sSbL3q" style="width: 100%; height: 500px;"></div> 
-    <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=sSbL3q&utm_source=typeform.com-01E2EANJYK48V8RZPDKDE5AQ7W-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-
-      <!-- footer -->
+      
+      <!-- Search tutorial -->
+      <div class="jumbotron" id="searchTutorial">
+          <div class="container">
+              <h1 class="display-4">Does your new bae have a dark past?</h1>
+              <p> Type your bae's name in the search box below to discover if anybody has reported their history of infidelity to us. You can also report your ex's history of infidelity by clicking the button below. <strong>Remember to always consider our disclaimer when using www.mycheatingex.com.</strong>
+              </p>
+          <div class="removeDiv">
+          <p>
+                  <a class="btn btn-primary btn-lg " href="/report" role="button">I want to report my ex</a>
+          </p>
+              </div>
+          </div>
+      </div>
+      <!-- search bar -->
       <div class="container">
-        <footer class="pt-4 my-md-5 pt-md-5 border-top">
-          <div class="row">
-            <div class="col-12 col-md">
-              <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
-              <small class="d-block mb-3 text-muted">© 2020 Copyright of Safe Dating International LTD</small>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Menu</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="/index">Reports</a></li>
-                <li><a class="text-muted" href="/report">Report my ex</a></li>
-                <li><a class="text-muted" href="/faq">FAQ</a></li>
-                <li><a class="text-muted" href="/disclaimer">Disclaimer</a></li>
-                <li><a class="text-muted" href="/contact">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Resources</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="/termsandconditions">Terms & Conditions</a></li>
-                <li><a class="text-muted" href="/disclaimer">Disclaimer</a></li>
-                <li><a class="text-muted" href="/privacypolicy">Privacy Policy</a></li>
-                <li><a class="text-muted" href="#">Cookie Notice</a></li>
-              </ul>
+        <div class="row">
+          <div class="col-sm-12 mb-3 mt-3">
+            <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search by name..">
+          </div>
+        </div>
+      <!-- results -->
+      <div class="container" id="resultsContainer">
+        <div class="row" id="myItems">
+          <!-- card one -->
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-block">
+                <img class="card-img-top img-fluid" src="https://dominiconorton-images.s3-eu-west-1.amazonaws.com/2.png">
+                  <h5 class="card-title">Rihanna Sanchez</h5>
+                              <h6 class="card-personalityType">London, England</h6>
+                  <p class="card-text">I was 17 and he was my first boyfriend. I wasn't going to sleep with him and<span id="dots">...</span><span id="more"></p>
+                          <p class="card-text"><small class="text-muted">Last updated 02/03/2020</small></p>
+               </div>
             </div>
           </div>
-        </footer>
-      </div>
+          <!-- card two -->
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-block">
+                <img class="card-img-top img-fluid" src="https://dominiconorton-images.s3-eu-west-1.amazonaws.com/1.png" alt="Card image cap">
+                  <h5 class="card-title">Alton Schroeder</h5>
+                              <h6 class="card-personalityType">Berlin, Germany</h6>
+                  <p class="card-text">A friend was staying with us for a few weeks while helping us start a business<span id="dots">...</span><span id="more"></p>
+                  <p class="card-text"><small class="text-muted">Last updated 02/03/2020</small></p>
+               </div>
+            </div>
+          </div>
+          <!-- card three -->
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-block">
+                <img class="card-img-top img-fluid" src="https://dominiconorton-images.s3-eu-west-1.amazonaws.com/3.png">
+                  <h5 class="card-title">Izabelle Nichols</h5>
+                              <h6 class="card-personalityType">Manchester, England</h6>
+                  <p class="card-text">I found an $80 charge to our joint account from a fancy restaurant she took me<span id="dots">...</span><span id="more"></p>
+                  <p class="card-text"><small class="text-muted">Last updated 02/03/2020</small></p>
+               </div>
+            </div>
+          </div>
+          <!-- card four -->
+          <div class="col-sm-3 mt-3">
+            <div class="card">
+              <div class="card-block">
+                <img class="card-img-top img-fluid" src="https://dominiconorton-images.s3-eu-west-1.amazonaws.com/4.png" alt="Card image cap">
+                  <h5 class="card-title">Ismael Edmonds</h5>
+                              <h6 class="card-personalityType">Houston Texas</h6>
+                  <p class="card-text">We went to different universities. He kept looking to his right while on camera<span id="dots">...</span><span id="more"></p>
+                  <p class="card-text"><small class="text-muted">Last updated 02/03/2020</small></p>
+               </div>
+            </div>
+          </div>
+          </div>
+          </div>
+          
+          <!-- footer -->
+          <div class="container">
+            <footer class="pt-4 my-md-5 pt-md-5 border-top">
+              <div class="row">
+                <div class="col-12 col-md">
+                  <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                  <small class="d-block mb-3 text-muted">© 2020 Copyright of Safe Dating International LTD</small>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Menu</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/report">Reports</a></li>
+                    <li><a class="text-muted" href="/reportmyex">Report my ex</a></li>
+                    <li><a class="text-muted" href="/faq">FAQ</a></li>
+                    <li><a class="text-muted" href="/disclaimer">Disclaimer</a></li>
+                    <li><a class="text-muted" href="/contact">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-md">
+                  <h5>Resources</h5>
+                  <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="/termsandconditions">Terms & Conditions</a></li>
+                    <li><a class="text-muted" href="/disclaimer">Disclaimer</a></li>
+                    <li><a class="text-muted" href="/privacypolicy">Privacy Policy</a></li>
+                    <li><a class="text-muted" href="/cookiepolicy">Cookie Notice</a></li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+          </div>
 
+  <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </body>
 </html>
